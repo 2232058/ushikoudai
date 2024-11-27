@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+ul.menu {
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+    background-color: red;
+}
+ul.menu li {
+    width: 125px;
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+ul.menu a {
+    background-color: red;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+.container {
+    height: 300px;
+    width: 450px;
+    position: relative;
+    top: 0px;
+    left: 420px;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0; /* 初期状態は透明 */
+    background-size: cover;
+    background-position: center center;
+    animation: image-switch-animation 15s infinite; /* 3枚用に15秒に調整 */
+}
+.src1 {
+    background-image: url(店1.jpg);
+}
+.src2 {
+    background-image: url(炭.jpg);
+}
+.src3 {
+    background-image: url(工大カルビ.jpg);
+}
+
+@keyframes image-switch-animation {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    30% { opacity: 1; } /* 表示時間調整 */
+    35% { opacity: 0; }
+    100% { opacity: 0; }
+}
+.image:nth-of-type(1) {
+    animation-delay: 0s;
+}
+.image:nth-of-type(2) {
+    animation-delay: 5s; /* 15秒を3等分 */
+}
+.image:nth-of-type(3) {
+    animation-delay: 10s;
+}
+
+footer {
+    height: 170px;
+    width: 950px;
+    background-color: black;
+    color: white;
+    float: left;
+}
+main {
+    background-color: #696969;
+
+}
+header {
+    background-color: black;
+    color: white;
+    height: 150px;
+    width: 810px;
+}
+body {
+    background-color: black;
+}
+p{
+  color: white;
+}
+h2{
+  color: white;
+}
+.homemeet{
+  color: white;
+}
+.ushi{
+  position: relative;
+  top: -105px;
+  left: 100px;
+}
+.tori{
+  position: relative;
+  top: -235px;
+  left: 210px;
+}
+header p{
+  position: relative;
+  top: -300px;
+  left: 320px;
+}
+.wrap{
+  background-color: black;
+  display: flex;
+  flex-wrap:wrap;
+}
+img{
+  width:60%;
+}
+.shop{
+  background-color: black;
+  width: 60%;
+}
+.meets{
+  background-color: #696969;
+  float:left;
+  width: 50%;
+  text-align: center;
+}
+h3{
+  color: white;
+  font-size: 50px;
+}
+aside {
+  height: 100px;
+  width: 160px;
+  background-color: black;
+  margin-top: 2em;
+  margin-left: 0.6em;
+}
+.aside1 {
+  position: relative;
+  top: -420px;
+  left: 0px;
+  height: 550px;
+  width: 180px;
+  background-color: #696969;
+  float: right;
+}
+.aside2 {
+  position: relative;
+  top: -2100px;
+  left: 0px;
+  height: 550px;
+  width: 180px;
+  background-color: #696969;
+  float: right;
+}
+.aside3 {
+  position: relative;
+  top: -150px;
+  left: 0px;
+  height: 550px;
+  width: 180px;
+  background-color: #696969;
+  float: right;
+}
+#button{
+  position: relative;
+  left: 60px;
+}
+.logo{
+  width: 400px;
+  height: 400px;
+}
+.foodmenu{
+  font-size: 30px;
+}
+.irasuto{
+  width: 400px;
+  height: 400px;
+}
+.yoyaku{
+  position: relative;
+  top: 30px;
+  width: 300px;
+  height: 300px;
+}
