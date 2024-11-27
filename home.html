@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>牛工大</title>
+        <link rel="stylesheet" href="meet.css">
+    </head>
+    <body>
+        <audio src="niku.mp4" autoplay loop>
+            あなたのブラウザーは <code>audio</code>要素をサポートしていません。
+          </audio>
+        <header>
+            <div class="logo">
+            <a href="home.html"><img src = "ロゴ.jpg"></a>
+            </div>
+            <p><span style="font-weight: bold; color: red;">モットー</span> 中途半端なものは提供しません。一流の肉を格安で！</p>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="food.html">メニュー</a></li>
+                <li><a href="about.html">当店について</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="image src1"></div>
+                <div class="image src2"></div>
+                <div class="image src3"></div>
+              </div>
+        </main>
+        <h2>メニュー</h2>
+        <div class="homemeet">
+            <ul class="buta">
+                <p>豚肉</p>
+                <li>ホルモン</li>
+                <li>タン</li>
+            </ul>
+            <ul class="ushi">
+                <p>牛肉</p>
+                <li>工大カルビ</li>
+                <li>カルビ</li>
+                <li>ハラミ</li>
+            </ul>
+            <ul class="tori">
+                <p>鶏肉</p>
+                <li>ハラミ付きヤゲン</li>
+                <li>とりもも</li>
+            </ul>
+        </div>
+        <div class="aside1">
+        <aside>
+            <p>ご予約はこちらから！</p>
+            <input type="button" value="予約" id="button"></input>
+        </aside>
+        </div>
+        <footer>
+            <p>店名: 牛工大</p>
+            <p>場所 〒000-0000 焼肉市美食町1-2-3</p>
+            <p>電話番号 000-456-7890</p>
+            <p>メール info@yakiniki.umai.up</p>
+        </footer>
+<script>
+function reservation() {
+    alert("予約完了");
+}
+
+let button = document.getElementById("button");
+button.addEventListener("click",reservation);
+
+</script>
+        </body>
+</html>
